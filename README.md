@@ -1,4 +1,4 @@
-<h3>BENCH MARKING PERFORMANCE EVALUATION</h3>
+<h3>BENCHMARKING PERFORMANCE EVALUATION</h3>
 
 
 README:
@@ -16,7 +16,7 @@ How to run:
 	sh CPUscript.sh
 4. The desired output for GIOPS and GFLOPS will be displayed
 
-	"600 Sec plot values for CPU"
+	<code>"600 Sec plot values for CPU"</code>
 
 1. In the "Cpu" folder, you will find a script "newscript.sh"
 2. execute the script file as:
