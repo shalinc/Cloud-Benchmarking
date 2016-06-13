@@ -23,14 +23,12 @@ The packets transmitted are of various sizes i.e. 1 Byte, 1KB and 1MB.
 The TCP being reliable and connection oriented requires pre connection setup and accepting of connection between client and server.
 On the other hand UDP being connection less, the packets are sent and received without and pre established connection.</p>
 
-<h4>README:</h4>
+<h4>How to run:</h4>
 
 Considering the instance on which the program is going to be tested has the required compilers for Java and C programs
 Extract the Folder named "Cloud-Benchmarking.zip" or Clone the Repository
 
-<h4>How to run:</h4>
-
-	"CPU BENCHMARKING"
+"CPU BENCHMARKING"
 
 1. goto the folder named "Cpu"
 2. Open the terminal for the instance you are running on
@@ -38,7 +36,7 @@ Extract the Folder named "Cloud-Benchmarking.zip" or Clone the Repository
 	sh CPUscript.sh
 4. The desired output for GIOPS and GFLOPS will be displayed
 
-	<code>"600 Sec plot values for CPU"</code>
+<pre><code>"600 Sec Plot values for CPU"</code></pre>
 
 1. In the "Cpu" folder, you will find a script "newscript.sh"
 2. execute the script file as:
@@ -50,7 +48,7 @@ Extract the Folder named "Cloud-Benchmarking.zip" or Clone the Repository
 
 
 
-	"DISK BENCHMARKING"
+<pre><code>"DISK BENCHMARKING"</code></pre>
 
 1. goto the folder named "Disk"
 2. Open the terminal for the instance you are running on
@@ -60,7 +58,7 @@ Extract the Folder named "Cloud-Benchmarking.zip" or Clone the Repository
 
 
 
-	"MEMORY BENCHMARKING"
+<pre><code>"MEMORY BENCHMARKING"</code></pre>
 
 1. goto the folder named "Memory"
 2. Open the terminal for the instance you are running on
@@ -70,7 +68,7 @@ Extract the Folder named "Cloud-Benchmarking.zip" or Clone the Repository
 
 
 
-	"NETWORK BENCHMARKING"
+<pre><code>"NETWORK BENCHMARKING"</code></pre>
 
 1. goto the folder named "Network"
 2. Here we will require 2 instances to be opened
@@ -88,11 +86,11 @@ Extract the Folder named "Cloud-Benchmarking.zip" or Clone the Repository
 
 
 
-"BENCHMARK TOOLS"
+<h4>"BENCHMARK TOOLS"</h4>
 
 Considering that all the Benchmarks files are already present
  
-"LINPACK BENCHMARK FOR CPU"
+<pre><code>"LINPACK BENCHMARK FOR CPU"</code></pre>
 	1. goto "l_mklb_p_11.3.1.002/benchmarks_11.3.1/linux/mkl/benchmarks/linpack" path
 	execute ./runme_xeon64 
 	this will run the Benchmark with its own values and the output will be displayed
@@ -105,7 +103,7 @@ Considering that all the Benchmarks files are already present
 	Number of trials to run:
 	Data alignment value (in Kbytes): (should not be > 64)
 
-"IOZONE BENCHMARK FOR DISK"
+<pre><code>"IOZONE BENCHMARK FOR DISK"</code></pre>
 	1. goto iozone3_434/src/current path
 	execute ./iozone -a
 	This will give the Disk Benchmark values for different file sizes,
@@ -114,7 +112,7 @@ Considering that all the Benchmarks files are already present
 	execute ./iozone -g# -s 1024
 	This will give the Output for file size of 1024 Kbytes	
 
-"STREAM BENCHMARK FOR MEMORY"
+<pre><code>"STREAM BENCHMARK FOR MEMORY"</code></pre>
 
 	1. do, wget http://www.nersc.gov/assets/Trinity--NERSC-8-RFP/Benchmarks/Jan9/stream.tar
 	This will download STREAM in your current working directory
@@ -124,7 +122,7 @@ Considering that all the Benchmarks files are already present
 	The desired output will be displayed
 
 
-"IPERF BENCHMARK FOR NETWORK"
+<pre><code>"IPERF BENCHMARK FOR NETWORK"</code></pre>
 
 	1. do sudo apt-get install iperf, to install IPERF
 		"FOR TCP"
