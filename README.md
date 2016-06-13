@@ -32,14 +32,14 @@ Extract the Folder named "Cloud-Benchmarking.zip" or Clone the Repository
 
 1. goto the folder named "Cpu"
 2. Open the terminal for the instance you are running on
-3. execute the script file named "CPUscript.sh" as:
+3. execute the script file named "CPUscript.sh" as:<br/>
 	sh CPUscript.sh
 4. The desired output for GIOPS and GFLOPS will be displayed
 
 <pre><code>"600 Sec Plot values for CPU"</code></pre>
 
 1. In the "Cpu" folder, you will find a script "newscript.sh"
-2. execute the script file as:
+2. execute the script file as:<br/>
 	sh newscript.sh
 3. The terminal will display the appropriate msg for Integer and Floating point operations
 4. The operations run for 10 mins each, giving 2 .txt files having the values for per second
@@ -52,7 +52,7 @@ Extract the Folder named "Cloud-Benchmarking.zip" or Clone the Repository
 
 1. goto the folder named "Disk"
 2. Open the terminal for the instance you are running on
-3. execute the script file named "DISKscript.sh" as:
+3. execute the script file named "DISKscript.sh" as:<br/>
 	sh DISKscript.sh
 4. The desired output for RANDOM and SEQUENTIAL Read & Write operations will be displayed
 
@@ -62,7 +62,7 @@ Extract the Folder named "Cloud-Benchmarking.zip" or Clone the Repository
 
 1. goto the folder named "Memory"
 2. Open the terminal for the instance you are running on
-3. execute the script file named "MEMORYscript.sh" as:
+3. execute the script file named "MEMORYscript.sh" as:<br/>
 	sh MEMORYscript.sh
 4. The desired output for RANDOM ACCESS and SEQUENTIAL ACCESS for Memory will be displayed
 
@@ -74,13 +74,13 @@ Extract the Folder named "Cloud-Benchmarking.zip" or Clone the Repository
 2. Here we will require 2 instances to be opened
 3. one of the isntance will be acting as SERVER and another will be acting as CLIENT
 4. Before execution, the files for Client and Server needs to modified with the IPAddress
-5. For the file "ClientBM.java", change the LINE NO: 18, to the IPAddress of the Server
+5. For the file "ClientBM.java", change the LINE NO: 18, to the IPAddress of the Server<br/>
    For the file "ClientUDP.java", change the LINE NO: 42, to the IPAddress of the Server
 6. Copy the entire "Network" folder on both the terminals
 7. execute command javac *.java on both the terminals
-8. On Server side execute the script as:
+8. On Server side execute the script as:<br/>
 	sh Serverscript.sh
-9. On Client side execute the script as:
+9. On Client side execute the script as:<br/>
 	sh Clientscript.sh 
 10. The desired output for TCP & UDP will be displayed on the Client Side terminal
 
@@ -91,40 +91,40 @@ Extract the Folder named "Cloud-Benchmarking.zip" or Clone the Repository
 Considering that all the Benchmarks files are already present
  
 <pre><code>"LINPACK BENCHMARK FOR CPU"</code></pre>
-1. goto "l_mklb_p_11.3.1.002/benchmarks_11.3.1/linux/mkl/benchmarks/linpack" path
-	execute ./runme_xeon64 
+1. goto "l_mklb_p_11.3.1.002/benchmarks_11.3.1/linux/mkl/benchmarks/linpack" path<br/>
+	execute ./runme_xeon64 <br/>
 	this will run the Benchmark with its own values and the output will be displayed
-2. to run with different input data, execute ./xlinpack_xeon64
-	a message will be prompted press ENTER
-	then type the values for 
-	Number of equations to solve (problem size): 
-	Leading dimension of array: (should be >= 5000)
-	Number of trials to run:
-	Data alignment value (in Kbytes): (should not be > 64)
+2. to run with different input data, execute ./xlinpack_xeon64<br/>
+	a message will be prompted press ENTER<br/>
+	then type the values for <br/>
+	Number of equations to solve (problem size): <br/>
+	Leading dimension of array: (should be >= 5000)<br/>
+	Number of trials to run:<br/>
+	Data alignment value (in Kbytes): (should not be > 64)<br/>
 
 <pre><code>"IOZONE BENCHMARK FOR DISK"</code></pre>
-1. goto iozone3_434/src/current path
-	execute ./iozone -a
+1. goto iozone3_434/src/current path<br/>
+	execute ./iozone -a<br/>
 	This will give the Disk Benchmark values for different file sizes,
-2. To execute for a particular file size 
-	execute ./iozone -g# -s 1024
+2. To execute for a particular file size <br/>
+	execute ./iozone -g# -s 1024<br/>
 	This will give the Output for file size of 1024 Kbytes	
 
 <pre><code>"STREAM BENCHMARK FOR MEMORY"</code></pre>
-1. do, wget http://www.nersc.gov/assets/Trinity--NERSC-8-RFP/Benchmarks/Jan9/stream.tar
+1. do, wget http://www.nersc.gov/assets/Trinity--NERSC-8-RFP/Benchmarks/Jan9/stream.tar<br/>
 	This will download STREAM in your current working directory
 
-2. do gcc -o stream stream.c
-	execute ./stream
+2. do gcc -o stream stream.c<br/>
+	execute ./stream<br/>
 	The desired output will be displayed
 
 <pre><code>"IPERF BENCHMARK FOR NETWORK"</code></pre>
 
-1. do sudo apt-get install iperf, to install IPERF
+1. do sudo apt-get install iperf, to install IPERF<br/>
 	"FOR TCP"
 2. On one instance as Server execute: iperf -s and on Client execute: iperf -c <IPAddress of Server> -n <size of packet to send in bytes>
 3. It will send the packet and the bandwidth will be displayed accordingly
-	"FOR UDP"
-4. On one instance as Server execute: iperf -su and 
+	"FOR UDP"<br/>
+4. On one instance as Server execute: iperf -su and <br/>
 	On Client execute: iperf -c <IPAddress of Server> -u -n <size of packet to send in bytes>
 5. It will send the packet and the bandwidth will be displayed accordingly
