@@ -1,14 +1,14 @@
 <h3>BENCHMARKING PERFORMANCE EVALUATION</h3>
 
 
-README:
+<h4>README:</h4>
 
 Considering the instance on which the program is going to be tested has the required compilers for Java and C programs
 Extract the Folder named "Cloud-Benchmarking.zip" or Clone the Repository
 
-How to run:
+<h4>How to run:</h4>
 
-	"CPU BENCHMARKING"
+	<b>"CPU BENCHMARKING"</b>
 
 1. goto the folder named "Cpu"
 2. Open the terminal for the instance you are running on
