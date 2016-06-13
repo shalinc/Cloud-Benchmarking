@@ -1,13 +1,10 @@
-Programming Assignment 1
-BENCH MARKING PERFORMANCE EVALUATION
-Chopra Shalin
-A20355181
+<h3>BENCH MARKING PERFORMANCE EVALUATION</h3>
+
 
 README:
 
-Considering the instance on which the program is going to be tested has the required compilers for
-Java and C programs
-Extract the Folder named "PROG1_CHOPRA_SHALIN.zip"
+Considering the instance on which the program is going to be tested has the required compilers for Java and C programs
+Extract the Folder named "Cloud-Benchmarking.zip" or Clone the Repository
 
 How to run:
 
