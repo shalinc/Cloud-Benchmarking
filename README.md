@@ -95,7 +95,7 @@ Considering that all the Benchmarks files are already present
 	execute ./runme_xeon64 <br/>
 	this will run the Benchmark with its own values and the output will be displayed
 2. to run with different input data, execute ./xlinpack_xeon64<br/>
-	a message will be prompted press ENTER<br/>
+	a message will be prompted press ENTER <br/>
 	then type the values for <br/>
 	Number of equations to solve (problem size): <br/>
 	Leading dimension of array: (should be >= 5000)<br/>
