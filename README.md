@@ -28,7 +28,7 @@ On the other hand UDP being connection less, the packets are sent and received w
 Considering the instance on which the program is going to be tested has the required compilers for Java and C programs
 Extract the Folder named "Cloud-Benchmarking.zip" or Clone the Repository
 
-"CPU BENCHMARKING"
+<pre><code>"CPU BENCHMARKING"</code></pre>
 
 1. goto the folder named "Cpu"
 2. Open the terminal for the instance you are running on
@@ -91,11 +91,10 @@ Extract the Folder named "Cloud-Benchmarking.zip" or Clone the Repository
 Considering that all the Benchmarks files are already present
  
 <pre><code>"LINPACK BENCHMARK FOR CPU"</code></pre>
-	1. goto "l_mklb_p_11.3.1.002/benchmarks_11.3.1/linux/mkl/benchmarks/linpack" path
+1. goto "l_mklb_p_11.3.1.002/benchmarks_11.3.1/linux/mkl/benchmarks/linpack" path
 	execute ./runme_xeon64 
 	this will run the Benchmark with its own values and the output will be displayed
-	
-	2. to run with different input data, execute ./xlinpack_xeon64
+2. to run with different input data, execute ./xlinpack_xeon64
 	a message will be prompted press ENTER
 	then type the values for 
 	Number of equations to solve (problem size): 
@@ -104,31 +103,28 @@ Considering that all the Benchmarks files are already present
 	Data alignment value (in Kbytes): (should not be > 64)
 
 <pre><code>"IOZONE BENCHMARK FOR DISK"</code></pre>
-	1. goto iozone3_434/src/current path
+1. goto iozone3_434/src/current path
 	execute ./iozone -a
 	This will give the Disk Benchmark values for different file sizes,
-	
-	2. To execute for a particular file size 
+2. To execute for a particular file size 
 	execute ./iozone -g# -s 1024
 	This will give the Output for file size of 1024 Kbytes	
 
 <pre><code>"STREAM BENCHMARK FOR MEMORY"</code></pre>
-
-	1. do, wget http://www.nersc.gov/assets/Trinity--NERSC-8-RFP/Benchmarks/Jan9/stream.tar
+1. do, wget http://www.nersc.gov/assets/Trinity--NERSC-8-RFP/Benchmarks/Jan9/stream.tar
 	This will download STREAM in your current working directory
 
-	2. do gcc -o stream stream.c
+2. do gcc -o stream stream.c
 	execute ./stream
 	The desired output will be displayed
 
-
 <pre><code>"IPERF BENCHMARK FOR NETWORK"</code></pre>
 
-	1. do sudo apt-get install iperf, to install IPERF
-		"FOR TCP"
-	2. On one instance as Server execute: iperf -s and on Client execute: iperf -c <IPAddress of Server> -n <size of packet to send in bytes>
-	3. It will send the packet and the bandwidth will be displayed accordingly
-		"FOR UDP"
-	4. On one instance as Server execute: iperf -su and 
-	   On Client execute: iperf -c <IPAddress of Server> -u -n <size of packet to send in bytes>
-	5. It will send the packet and the bandwidth will be displayed accordingly
+1. do sudo apt-get install iperf, to install IPERF
+	"FOR TCP"
+2. On one instance as Server execute: iperf -s and on Client execute: iperf -c <IPAddress of Server> -n <size of packet to send in bytes>
+3. It will send the packet and the bandwidth will be displayed accordingly
+	"FOR UDP"
+4. On one instance as Server execute: iperf -su and 
+	On Client execute: iperf -c <IPAddress of Server> -u -n <size of packet to send in bytes>
+5. It will send the packet and the bandwidth will be displayed accordingly
